@@ -1,8 +1,8 @@
-import  socket
+import socket
 import sys
 
 
-# Create socket (allows  two computers to connect)
+# Create socket (allows two computers to connect)
 def socket_create():
     try:
         global host
@@ -15,7 +15,7 @@ def socket_create():
         print("Socket creation error: " + str(msg))
 
 
-# Bind socket to port and wait for connection from client
+# Bind socket to port (the host and port the communication will take place) and wait for connection from client
 def socket_bind():
     try:
         global host
@@ -29,7 +29,7 @@ def socket_bind():
         socket_bind()
 
 
-# Establish a connection with client (socket must be listening for them)
+# Establish connection with client (socket must be listening for them)
 def socket_accept():
     conn, address = s.accept()
     print("Connection has been established | " + "IP " + address[0] + " | Port " + str(address[1]))
