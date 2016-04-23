@@ -10,7 +10,7 @@ def createFile(dest):
     date = t.localtime(t.time())
 
     # FileName = Month_Day_Year
-    name = '%d_%d_%d.txt' % (date[1], date[2], (date[0]%100)) # '%100' takes two last numbers of the year by  
+    name = '%d_%d_%d.txt' % (date[1], date[2], (date[0]%100)) # '%100' takes two last numbers of the year by remainder
 
     if not(path.isfile(dest + name)):
         f = open(dest + name, 'w')
