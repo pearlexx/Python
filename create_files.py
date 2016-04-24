@@ -25,6 +25,27 @@ if __name__ == '__main__':
 # Tasks
 # A) In the script, change the '.txt' extension to something else (html, c, etc.)
 # B) Change script to store some text in file
+
+
+------------------- SOLUTION -------------------
+#!/usr/bin/env python
+
+import os.path
+
+path = (os.path.dirname(os.path.realpath(__file__)))
+
+words = "You know what this file could use?"
+words += '\nHam'*50
+
+# -- C --
+for i in range(5):
+	# -- A --
+	f = open('%03d_myFile.html'%i, 'w')
+	# -- B --
+	f.write(words)
+	f.close()
+
+print ('done!')
 # C) Create a loop that creates 5 text files of different names
 
 # Courtesy of https://www.youtube.com/watch?v=DRZdfd5_rdg&list=PL82YdDfxhWsC-3kdTKK2_mwbNdBfVvb_M
