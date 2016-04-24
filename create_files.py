@@ -42,7 +42,7 @@ words += '\nHam'*50
 # -- C --
 for i in range(5):
 	# -- A --
-	f = open('%03d_myFile.html'%i, 'w')
+	f = open('%03d_myFile.html'%i, 'w') # '03d' means create file starting with three zeros, 000_myFile.html, 001_myFile.html and etc.
 	# -- B --
 	f.write(words)
 	f.close()
