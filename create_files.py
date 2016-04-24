@@ -25,9 +25,11 @@ if __name__ == '__main__':
 # Tasks
 # A) In the script, change the '.txt' extension to something else (html, c, etc.)
 # B) Change script to store some text in file
+# C) Create a loop that creates 5 text files of different names
 
 
-------------------- SOLUTION -------------------
+
+# ------------------- SOLUTION -------------------
 #!/usr/bin/env python
 
 import os.path
@@ -46,6 +48,6 @@ for i in range(5):
 	f.close()
 
 print ('done!')
-# C) Create a loop that creates 5 text files of different names
+
 
 # Courtesy of https://www.youtube.com/watch?v=DRZdfd5_rdg&list=PL82YdDfxhWsC-3kdTKK2_mwbNdBfVvb_M
